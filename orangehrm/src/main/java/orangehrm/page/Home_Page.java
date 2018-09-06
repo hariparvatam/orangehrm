@@ -33,6 +33,14 @@ public class Home_Page extends Base_Setup{
 		timeLink.click();
 		return new Timesheets_Page();
 	}
+	public MyInfo clickMyInfoLinkPage(){
+		myInfoLink.click();
+		return new MyInfo();
+	}
+	public Dashboard_Page clickDashboardLinkPage(){
+		dashboardLink.click();
+		return new Dashboard_Page();
+	}
 	
 
 

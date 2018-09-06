@@ -1,12 +1,13 @@
 package orangehrm.test;
 
-import org.openqa.selenium.By;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import orangehrm.base.Base_Setup;
+import orangehrm.page.Dashboard_Page;
 import orangehrm.page.Home_Page;
 import orangehrm.page.Login_Page;
 
