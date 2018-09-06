@@ -1,57 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66830" started-at="2018-09-06T05:50:58Z" finished-at="2018-09-06T05:52:05Z">
+  <suite name="Default suite" duration-ms="31683" started-at="2018-09-06T06:38:33Z" finished-at="2018-09-06T06:39:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66830" started-at="2018-09-06T05:50:58Z" finished-at="2018-09-06T05:52:05Z">
-      <class name="orangehrm.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="8025" started-at="2018-09-06T05:50:58Z" finished-at="2018-09-06T05:51:06Z">
+    <test name="Default test" duration-ms="31683" started-at="2018-09-06T06:38:33Z" finished-at="2018-09-06T06:39:04Z">
+      <class name="orangehrm.test.LeavePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.LeavePageTest@29774679]" name="setUp" is-config="true" duration-ms="11868" started-at="2018-09-06T06:38:33Z" finished-at="2018-09-06T06:38:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTest()[pri:1, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="verifyHomePageTest" duration-ms="78" started-at="2018-09-06T05:51:06Z" finished-at="2018-09-06T05:51:06Z">
+        <test-method status="PASS" signature="verifyClickApplyLeaveLink()[pri:1, instance:orangehrm.test.LeavePageTest@29774679]" name="verifyClickApplyLeaveLink" duration-ms="1201" started-at="2018-09-06T06:38:45Z" finished-at="2018-09-06T06:38:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="11413" started-at="2018-09-06T05:51:06Z" finished-at="2018-09-06T05:51:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyclickLeaveLinkTest()[pri:2, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="verifyclickLeaveLinkTest" duration-ms="5727" started-at="2018-09-06T05:51:17Z" finished-at="2018-09-06T05:51:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyclickLeaveLinkTest -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="11639" started-at="2018-09-06T05:51:23Z" finished-at="2018-09-06T05:51:35Z">
+        </test-method> <!-- verifyClickApplyLeaveLink -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.LeavePageTest@29774679]" name="setUp" is-config="true" duration-ms="17211" started-at="2018-09-06T06:38:46Z" finished-at="2018-09-06T06:39:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyClickTimeLinkPage()[pri:3, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="verifyClickTimeLinkPage" duration-ms="3645" started-at="2018-09-06T05:51:35Z" finished-at="2018-09-06T05:51:38Z">
+        <test-method status="PASS" signature="verifyClickMyLeaveLink()[pri:2, instance:orangehrm.test.LeavePageTest@29774679]" name="verifyClickMyLeaveLink" duration-ms="1373" started-at="2018-09-06T06:39:03Z" finished-at="2018-09-06T06:39:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyClickTimeLinkPage -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="9191" started-at="2018-09-06T05:51:38Z" finished-at="2018-09-06T05:51:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyClickMyInfoLinkPage()[pri:4, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="verifyClickMyInfoLinkPage" duration-ms="4597" started-at="2018-09-06T05:51:48Z" finished-at="2018-09-06T05:51:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyClickMyInfoLinkPage -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="setUp" is-config="true" duration-ms="8593" started-at="2018-09-06T05:51:52Z" finished-at="2018-09-06T05:52:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="veriftClickDashboardLinkPage()[pri:5, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="veriftClickDashboardLinkPage" duration-ms="3163" started-at="2018-09-06T05:52:01Z" finished-at="2018-09-06T05:52:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- veriftClickDashboardLinkPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:orangehrm.test.HomePageTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="715" started-at="2018-09-06T05:52:04Z" finished-at="2018-09-06T05:52:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- orangehrm.test.HomePageTest -->
+        </test-method> <!-- verifyClickMyLeaveLink -->
+      </class> <!-- orangehrm.test.LeavePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="orangehrm.test.Login_Test">
+      <class name="orangehrm.test.LeavePageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="verifyClickMyLeaveLink"/>
+          <include name="verifyClickApplyLeaveLink"/>
         </methods>
-      </class> <!-- orangehrm.test.Login_Test -->
+      </class> <!-- orangehrm.test.LeavePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,20 +8,28 @@ import orangehrm.base.Base_Setup;
 
 public class Leave_Page extends Base_Setup {
 	
+	@FindBy(id="menu_leave_applyLeave")
+	WebElement applyLeave;
+	
+	@FindBy(id="menu_leave_viewMyLeaveList")
+	WebElement myLeave;
 	@FindBy(id="menu_leave_viewLeaveModule")
-	WebElement leave;
-	//@FindBy()
+	WebElement leaveLink;
 	
 	public Leave_Page(){
 		PageFactory.initElements(driver, this);
 	}
-	
-	public void validateLeavePage(){
-		
+	public Leave_Page clickLeaveLink(){
+		leaveLink.click();
+		return new Leave_Page();
+	}
+	public ApplyLeavePage clickApplyLeaveLink(){
+		applyLeave.click();
+		return new ApplyLeavePage();
 	}
 	
-	public void leavePage(){
-		leave.click();
+	public Leave_Page clickMyLeaveLink(){
+		myLeave.click();
+		return new Leave_Page();
 	}
-
 }
