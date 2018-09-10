@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Base_Setup {
 	public static WebDriver driver;
 	public static Properties prop;
-	public String path="./orangehrm/Properties_File/data.properties";
+	public String path="C:\\Users\\RAMU\\git\\orangehrm1\\orangehrm\\Properties_File\\data.properties";
 	 public Base_Setup(){
 		
 		 try{
@@ -27,7 +27,7 @@ public class Base_Setup {
 		 String browser=prop.getProperty("browser");
 		 
 		 if(browser.equals("chrome")){
-			 System.setProperty("webdriver.chrome.driver", "./orangehrm/Drivers/chromedriver.exe");
+			 System.setProperty("webdriver.chrome.driver", "C:\\Users\\RAMU\\git\\orangehrm1\\orangehrm\\Drivers\\chromedriver.exe");
 			 driver=new ChromeDriver();
 		 }
 		 else if(browser.equals("chrome")){

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="smoke-test(failed)">
     <classes>
       <class name="orangehrm.test.LeavePageTest">
         <methods>
@@ -10,6 +10,24 @@
           <include name="verifyClickApplyLeaveLink"/>
         </methods>
       </class> <!-- orangehrm.test.LeavePageTest -->
+      <class name="orangehrm.test.HomePageTest">
+        <methods>
+          <include name="veriftClickDashboardLinkPage"/>
+          <include name="verifyClickTimeLinkPage"/>
+          <include name="verifyclickLeaveLinkTest"/>
+          <include name="setUp"/>
+          <include name="verifyClickMyInfoLinkPage"/>
+          <include name="verifyHomePageTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- orangehrm.test.HomePageTest -->
+      <class name="orangehrm.test.Login_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- orangehrm.test.Login_Test -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- smoke-test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

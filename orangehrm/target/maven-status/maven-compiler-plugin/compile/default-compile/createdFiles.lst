@@ -1,0 +1,13 @@
+orangehrm\page\Time_Page.class
+orangehrm\page\My_Leave_Page.class
+orangehrm\page\Timesheets_Page.class
+orangehrm\page\Reports_Page.class
+orangehrm\page\Login_Page.class
+orangehrm\base\Base_Setup.class
+orangehrm\page\ApplyLeavePage.class
+orangehrm\page\Dashboard_Page.class
+orangehrm\page\Leave_Page.class
+orangehrm\page\MyInfo.class
+orangehrm\page\Attendance_Page.class
+orangehrm\page\Directory_Page.class
+orangehrm\page\Home_Page.class
