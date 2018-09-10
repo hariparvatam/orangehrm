@@ -5,7 +5,6 @@
     <classes>
       <class name="orangehrm.test.Login_Test"/>
       <class name="orangehrm.test.LeavePageTest"/>
-      <class name="orangehrm.test.HomePageTest"/>
     </classes>
   </test> <!-- smoke-test -->
 </suite> <!-- Suite -->

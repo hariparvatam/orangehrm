@@ -8,12 +8,11 @@ import org.testng.annotations.Test;
 
 import orangehrm.base.Base_Setup;
 import orangehrm.page.Dashboard_Page;
-import orangehrm.page.Home_Page;
 import orangehrm.page.Login_Page;
 
 public class Login_Test extends Base_Setup {
 	Login_Page login;
-	Home_Page homePage;
+	Dashboard_Page dashbaordPage;
 	
 	public Login_Test(){
 		super();
@@ -25,7 +24,7 @@ public class Login_Test extends Base_Setup {
 	}
 	@Test(priority=1)
 	public void loginTest(){
-		homePage=login.login(prop.getProperty("username"),prop.getProperty("pass"));
+		dashbaordPage=login.login(prop.getProperty("username"),prop.getProperty("pass"));
 		String str=login.loginPageValidation();
 		Assert.assertEquals(str, "Welcome TestingMasters");
 	}

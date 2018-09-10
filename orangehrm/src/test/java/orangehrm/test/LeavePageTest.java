@@ -1,16 +1,17 @@
 package orangehrm.test;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import orangehrm.base.Base_Setup;
 import orangehrm.page.ApplyLeavePage;
-import orangehrm.page.Home_Page;
+import orangehrm.page.Dashboard_Page;
 import orangehrm.page.Leave_Page;
 import orangehrm.page.Login_Page;
 
 public class LeavePageTest extends Base_Setup{
-	Home_Page homePage;
+	Dashboard_Page dashbaordPage;
 	Login_Page login;
 	Leave_Page leavePage ;
 	public LeavePageTest(){
@@ -21,17 +22,17 @@ public class LeavePageTest extends Base_Setup{
 		initilization();
 		login=new Login_Page();
 		leavePage=new Leave_Page();
-		homePage=login.login(prop.getProperty("username"), prop.getProperty("pass"));
+		dashbaordPage=login.login(prop.getProperty("username"), prop.getProperty("pass"));
 		leavePage.clickLeaveLink();
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void verifyClickApplyLeaveLink(){
 		leavePage.clickApplyLeaveLink();
 	}
-	@Test(priority=2)
-	public void verifyClickMyLeaveLink(){
-		leavePage.clickMyLeaveLink();
+	@AfterMethod
+	public void tearDown(){
+		driver.quit();
 	}
 
 }

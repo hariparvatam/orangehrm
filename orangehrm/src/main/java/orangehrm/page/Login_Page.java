@@ -1,6 +1,5 @@
 package orangehrm.page;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -25,12 +24,12 @@ public class Login_Page extends Base_Setup{
 	public String loginPageValidation(){
 	return link.getText();
 	}
-	public Home_Page login(String username, String pass){
+	public Dashboard_Page login(String username, String pass){
 		user_name.sendKeys(username);
 		password.sendKeys(pass);
 		login.click();
 		
-		return new Home_Page();
+		return new Dashboard_Page();
 	}
 
 }
