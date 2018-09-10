@@ -1,8 +1,11 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="example suite 1" verbose="1" >
-  <test name="Regression" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="smoke-test">
     <classes>
       <class name="orangehrm.test.Login_Test"/>
-     </classes>
- </test>
- </suite>
+      <class name="orangehrm.test.LeavePageTest"/>
+      <class name="orangehrm.test.HomePageTest"/>
+    </classes>
+  </test> <!-- smoke-test -->
+</suite> <!-- Suite -->
